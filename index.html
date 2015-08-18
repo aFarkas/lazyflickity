@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		function loadJS(u){var r=document.getElementsByTagName("script")[ 0 ],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+
+		if(!window.HTMLPictureElement){
+			document.createElement('picture');
+			//generating the config array
+			window.picturefillCFG = window.picturefillCFG || [];
+			picturefillCFG.push([ "algorithm", "saveData" ]);
+
+			loadJS("https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.0-beta1/picturefill.min.js");
+		}
+	</script>
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.css" rel="stylesheet" />
+	<style>
+
+		/* hide cells until fickity is ready -> so lazySizes doesn't load until layout is done */
+
+		.gallery-cell {
+			width: 100%;
+			visibility: hidden;
+		}
+
+		.flickity-slider > .gallery-cell {
+			visibility: visible;
+		}
+
+		.ratio-box {
+			position: relative;
+			height: 0;
+			display: block;
+			width: 100%;
+			/* padding-bottom is calculated and rendered in to HTML */
+		}
+
+		.ratio-box > * {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<!--
+
+	<img src="http://lorempixel.com/700/300/sports/dummy-logo-image" />
+
+-->
+
+<div class="gallery js-flickity">
+	<div class="gallery-cell">
+		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+			<img
+					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					srcset="http://lorempixel.com/700/300/sports/cell-1a/ 700w"
+					sizes="99vw"
+					 />
+		</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+			<img
+					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					sizes="99vw"
+					data-srcset="http://lorempixel.com/700/300/sports/cell-1b/ 700w"
+					class="lazyload" />
+		</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+			<img
+					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					sizes="99vw"
+					data-srcset="http://lorempixel.com/700/300/sports/cell-1c/ 700w"
+					class="lazyload" />
+		</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+			<img
+					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					sizes="99vw"
+					data-srcset="http://lorempixel.com/700/300/sports/cell-1d/ 700w"
+					class="lazyload" />
+		</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+			<img
+					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					sizes="99vw"
+					data-srcset="http://lorempixel.com/700/300/sports/cell-1e/ 700w"
+					class="lazyload" />
+		</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+			<img
+					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					sizes="99vw"
+					data-srcset="http://lorempixel.com/700/300/sports/cell-1f/ 700w"
+					class="lazyload" />
+		</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+			<img
+					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					sizes="99vw"
+					data-srcset="http://lorempixel.com/700/300/sports/cell-1g/ 700w"
+					class="lazyload" />
+		</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+			<img
+					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					sizes="99vw"
+					data-srcset="http://lorempixel.com/700/300/sports/cell-1h/ 700w"
+					class="lazyload" />
+		</div>
+	</div>
+	<div class="gallery-cell">
+		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
+			<img
+					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+					sizes="99vw"
+					data-srcset="http://lorempixel.com/700/300/sports/cell-1i/ 700w"
+					class="lazyload" />
+		</div>
+	</div>
+</div>
+<script>
+	window.lazySizesConfig = window.lazySizesConfig || {};
+	window.lazySizesConfig.loadMode = 1;
+
+	window.lazySizesConfig.expand = 222;
+	window.lazySizesConfig.expFactor = 1.6;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/1.1.5/lazysizes.min.js" async=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
+<script>
+	/*
+		for this demo not needed because we use CSS intrinsic sizing,
+		but really useful if you deal with responsive images or lazyloaded images
+	*/
+	(function(){
+		var oldFlickityCreate = window.Flickity.prototype._create;
+
+		window.Flickity.prototype._create = function(){
+			var that = this;
+			if(this.element.addEventListener){
+				this.element.addEventListener('load', function(){
+					that.onresize();
+				}, true);
+			}
+			this._create = oldFlickityCreate;
+			return oldFlickityCreate.apply(this, arguments);
+		};
+	})();
+</script>
+
+</body>
+</html>
