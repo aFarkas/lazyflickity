@@ -49,18 +49,17 @@
 	</style>
 </head>
 <body>
-<!--
-	<img src="http://lorempixel.com/700/300/sports/dummy-logo-image" srcset="http://lorempixel.com/1400/600/sports/dummy-logo-image 2x" style="max-width: 300px; display: inline-block;"  />
--->
+<img src="http://lorempixel.com/700/300/sports/dummy-logo-image" srcset="http://lorempixel.com/1400/600/sports/dummy-logo-image 2x" style="max-width: 300px; display: inline-block;"  />
 
 <div class="gallery js-flickity">
 	<div class="gallery-cell">
 		<div class="ratio-box" style="padding-bottom: 42.85% /* calc(75 / 175 * 100%)*/;">
 			<img
 					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-					srcset="http://lorempixel.com/700/300/sports/cell-1a/ 700w"
-					sizes="99vw"
-					 />
+					data-srcset="http://lorempixel.com/700/300/sports/cell-1a/ 700w"
+					data-sizes="auto"
+					class="lazyload"
+					/>
 		</div>
 	</div>
 	<div class="gallery-cell">
@@ -147,9 +146,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
 <script>
 	/*
-		for this demo not needed because we use CSS intrinsic sizing,
-		but really useful if you deal with responsive images or lazyloaded images
-	*/
+	 for this demo not needed because we use CSS intrinsic sizing,
+	 but really useful if you deal with responsive images or lazyloaded images
+	 */
 	(function(){
 		var oldFlickityCreate = window.Flickity.prototype._create;
 
